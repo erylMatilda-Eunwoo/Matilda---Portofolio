@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Ria Matilda Sihite</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-inner"><div class="loader-logo">matilda</div><div class="loader-bar"><div class="loader-fill"></div></div><p>Memuat Portfolio...</p></div></div>
+<canvas id="particleCanvas"></canvas>
+<div class="container">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="sb-logo">matilda<span>.</span></div>
+      <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="profile-section">
+      <div class="profile-ring">
+        <img src="foto ria pp linkin.jpeg" alt="Ria Matilda Sihite" class="profile-img">
+        <div class="profile-ring-glow"></div>
+      </div>
+      <h2 class="profile-name">Ria Matilda<br><span>Sihite</span></h2>
+      <p class="sidebar-status"><i class="fa-solid fa-circle status-dot"></i> Mahasiswi Informatika</p>
+      <div class="sidebar-actions"><button class="theme-btn" id="themeBtn" title="Toggle Dark Mode"><i class="fa-solid fa-moon" id="themeIcon"></i></button></div>
+    </div>
+    <nav>
+      <a href="#home" class="nav-link active"><span class="nav-icon"><i class="fa-solid fa-house"></i></span><span class="nav-text">Home</span></a>
+      <a href="#about" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-user"></i></span><span class="nav-text">About</span></a>
+      <a href="#skills" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-laptop-code"></i></span><span class="nav-text">Skills</span></a>
+      <a href="#projects" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-code"></i></span><span class="nav-text">Projects</span></a>
+      <a href="#certificates" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-certificate"></i></span><span class="nav-text">Certificates</span></a>
+      <a href="#experience" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span><span class="nav-text">Experience</span></a>
+      <a href="#contact" class="nav-link"><span class="nav-icon"><i class="fa-solid fa-envelope"></i></span><span class="nav-text">Contact</span></a>
+    </nav>
+    <div class="sidebar-footer"><p>© <span id="year"></span> Portfolio</p></div>
+  </aside>
+
+  <main class="content">
+    <section id="home" class="hero">
+      <div class="hero-bg-text">suhogf</div>
+      <div class="hero-slash"></div>
+      <div class="hero-content reveal-hero">
+        <div class="hero-badge"><span class="badge-dot"></span> Open to Opportunities</div>
+        <h1 class="hero-title"><span class="hero-line1">Ria Matilda</span><span class="hero-line2">Sihite<em class="hero-dot">.</em></span></h1>
+        <div class="hero-typing-wrap">
+          <div class="typing-cursor-line"><span id="typing1" class="t1"></span></div>
+          <div class="typing-cursor-line t2-wrap"><span id="typing2" class="t2"></span></div>
+        </div>
+        <p class="hero-desc">Mahasiswi Universitas Satya Terra Bhinneka Program Studi Informatika — memiliki ketertarikan pada Perhiasan/aksesoris, Hardware, Web Development, Database, Artificial Intelligence, dan Sustainable Technology.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-outline">Hubungi Saya <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Skills</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2025</span><span class="stat-label">Angkatan</span></div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint"><div class="scroll-mouse"><div class="scroll-wheel"></div></div><span>Scroll</span></div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="section-header"><h2 class="section-title">About <span class="red">Me</span></h2><div class="title-line"></div></div>
+      <div class="about-intro reveal-up"><div class="about-quote-mark">"</div><p>Saya adalah mahasiswi Program Studi Informatika Universitas Satya Terra Bhinneka yang memiliki minat pada pengembangan website, basis data, teknologi digital, dan pemanfaatan teknologi untuk mendukung pembangunan berkelanjutan.</p></div>
+      <div class="about-grid">
+        <div class="about-box reveal-up" style="--d:0s">
+          <div class="about-box-icon"><i class="fa-solid fa-id-card"></i></div><h3>Biodata</h3>
+          <ul>
+            <li><span>Nama</span><strong>Ria Matilda Sihite</strong></li>
+            <li><span>Status</span><strong>Mahasiswi Informatika</strong></li>
+            <li><span>Universitas</span><strong>Univ. Satya Terra Bhinneka</strong></li>
+            <li><span>Tahun Masuk</span><strong>2025</strong></li>
+          </ul>
+        </div>
+        <div class="about-box reveal-up" style="--d:.1s">
+          <div class="about-box-icon"><i class="fa-solid fa-school"></i></div><h3>Riwayat Pendidikan</h3>
+          <ul>
+            <li><span>SD</span><strong>2013 – 2019</strong></li>
+            <li><span>SMP</span><strong>2019 – 2022</strong></li>
+            <li><span>SMA</span><strong>2022 – 2025</strong></li>
+            <li><span>Universitas</span><strong>2025 – Sekarang</strong></li>
+          </ul>
+        </div>
+        <div class="about-box reveal-up" style="--d:.2s">
+          <div class="about-box-icon"><i class="fa-solid fa-microchip"></i></div><h3>Minat Teknologi</h3>
+          <div class="tag-cloud"><span class="tag">Web Dev</span><span class="tag">Database</span><span class="tag">AI</span><span class="tag">UI/UX</span><span class="tag">Sustainable Tech</span><span class="tag">Microsoft Office</span></div>
+        </div>
+        <div class="about-box reveal-up" style="--d:.3s">
+          <div class="about-box-icon"><i class="fa-solid fa-bullseye"></i></div><h3>Career Goals</h3>
+          <p>Menjadi <strong>Software/Hardware Engineer</strong> yang mampu menciptakan solusi digital inovatif dan bermanfaat bagi masyarakat luas.</p>
+          <p>Serta membuka <strong>Usaha Accessories</strong> yang mampu membuka lapangan pekerjaan bagi yang membutuhkan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad section-dark">
+      <div class="section-header"><h2 class="section-title">My <span class="gold">Skills</span></h2><div class="title-line gold-line"></div></div>
+      <div class="skill-container" id="skillContainer">
+        <div class="skill-item reveal-up" style="--d:0s"><div class="skill-top"><span class="skill-name">HTML</span><span class="skill-icon"><i class="fa-brands fa-html5"></i></span></div><div class="progress"><div class="progress-bar" data-width="85"></div></div><div class="skill-bottom"><span class="counter" data-target="85">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.05s"><div class="skill-top"><span class="skill-name">CSS</span><span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span></div><div class="progress"><div class="progress-bar" data-width="80"></div></div><div class="skill-bottom"><span class="counter" data-target="80">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.1s"><div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-icon"><i class="fa-brands fa-js"></i></span></div><div class="progress"><div class="progress-bar" data-width="70"></div></div><div class="skill-bottom"><span class="counter" data-target="70">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.15s"><div class="skill-top"><span class="skill-name">Java</span><span class="skill-icon"><i class="fa-brands fa-java"></i></span></div><div class="progress"><div class="progress-bar" data-width="70"></div></div><div class="skill-bottom"><span class="counter" data-target="70">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.2s"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-icon"><i class="fa-brands fa-python"></i></span></div><div class="progress"><div class="progress-bar" data-width="85"></div></div><div class="skill-bottom"><span class="counter" data-target="85">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.25s"><div class="skill-top"><span class="skill-name">Database & ERD</span><span class="skill-icon"><i class="fa-solid fa-database"></i></span></div><div class="progress"><div class="progress-bar" data-width="80"></div></div><div class="skill-bottom"><span class="counter" data-target="80">0%</span></div></div>
+        <div class="skill-item reveal-up" style="--d:.3s"><div class="skill-top"><span class="skill-name">Microsoft Office</span><span class="skill-icon"><i class="fa-solid fa-file-word"></i></span></div><div class="progress"><div class="progress-bar" data-width="90"></div></div><div class="skill-bottom"><span class="counter" data-target="90">0%</span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="section-header"><h2 class="section-title">My <span class="red">Project</span></h2><div class="title-line"></div></div>
+      <div class="project-showcase reveal-up">
+        <div class="project-visual">
+          <div class="project-img-wrap"><img src="matilda portofolio.png" alt="Website Portfolio"><div class="project-img-overlay"><span><i class="fa-solid fa-eye"></i> View Project</span></div></div>
+          <div class="project-number">01</div>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">RTM UAS</span>
+          <h3 class="project-title">Website Portfolio Pribadi</h3>
+          <p class="project-desc">Website portfolio pribadi yang dibangun menggunakan HTML, CSS, dan JavaScript murni. Menampilkan animasi interaktif, dark mode, typing effect, skill progress animation, dan desain responsif untuk semua perangkat.
+            Untuk Informasi Project selanjutnya ada di account github saya
+          </p>
+          <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span></div>
+          <div class="project-links">
+            <a href="#" class="btn-outline btn-sm"><i class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section-pad section-dark">
+      <div class="section-header"><h2 class="section-title">My <span class="gold">Certificates</span></h2><div class="title-line gold-line"></div></div>
+      <div class="cert-grid">
+        <a href="https://drive.google.com/drive/folders/1OUnJ1BYzdLLRiukeGUr-bvVQ8RKCMnEU?usp=drive_link" target="_blank" class="cert-card reveal-up" style="--d:0s"><div class="cert-glow"></div><div class="cert-icon"><img src="metc-soft-skill-series-1-problem-solving-boost-your-career-impact-certificate_page-0001.jpg" alt="Dicoding"></div><div class="cert-info"><h3>Dicoding Indonesia</h3><p>Problem solving & ML</p></div><div class="cert-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+        <a href="https://drive.google.com/drive/folders/1VkWJYpxLCYwKZstNj8hAkZI8nK19TsJW?usp=drive_link" target="_blank" class="cert-card reveal-up" style="--d:.1s"><div class="cert-glow"></div><div class="cert-icon"><img src="Excel 2019 Associate_page-0001.jpg" alt="Excel"></div><div class="cert-info"><h3>Microsoft Excel</h3><p>Microsoft Excel 2019 (MOS)</p></div><div class="cert-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+        <a href="https://drive.google.com/drive/folders/15Zyh0w22iFGQOoOZPif0ux-rX6wQOMg5?usp=drive_link" target="_blank" class="cert-card reveal-up" style="--d:.2s"><div class="cert-glow"></div><div class="cert-icon"><img src="GEMINI UNIVERSITY (PENELITIAN)_page-0001.jpg" alt="Gemini"></div><div class="cert-info"><h3>Google Gemini AI</h3><p>Artificial Intelligence</p></div><div class="cert-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+        <a href="https://drive.google.com/drive/folders/1qlhcDmJOsaoVVVulfrPSeSlsZFfia1BN?usp=drive_link" target="_blank" class="cert-card reveal-up" style="--d:.3s"><div class="cert-glow"></div><div class="cert-icon"><img src="Sertifikat-Ria Matilda Sihite _page-0002.jpg" alt="Public Speaking"></div><div class="cert-info"><h3>Public Speaking</h3><p>Communication Skills</p></div><div class="cert-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad">
+      <div class="section-header"><h2 class="section-title">My <span class="red">Experience</span></h2><div class="title-line"></div></div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up" style="--d:0s"><div class="tl-dot"><i class="fa-solid fa-users"></i></div><div class="tl-content"><div class="tl-year">Semester 1 - 2</div><h3>Organisasi Kampus</h3><p>Untuk pada saat ini belum mengikuti dan berencana bergabung dengan unit kegiatan mahasiswa di masa mendatang.</p></div></div>
+        <div class="timeline-item reveal-up" style="--d:.15s"><div class="tl-dot"><i class="fa-solid fa-star"></i></div><div class="tl-content"><div class="tl-year">SMP – SMA</div><h3>Kepanitiaan</h3><p>Berperan aktif sebagai panitia dalam kegiatan Paskah & Natal serta PA, yang mengasah kemampuan kepemimpinan dan kerja tim serta memastikan agar acara tersebut terlaksana dengan lancar.</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad section-dark">
+      <div class="section-header"><h2 class="section-title">Let's<span class="gold">Connect</span></h2><div class="title-line gold-line"></div></div>
+      <div class="contact-layout">
+        <div class="contact-left reveal-up">
+          <p class="contact-intro">Tertarik untuk berkolaborasi atau sekadar menyapa? Jangan ragu untuk menghubungi saya!</p>
+          <p class="contact-intro">Mari berkoneksi untuk membangun networking</p>
+          <div class="contact-links">
+            <a href="mailto:riamatilda99@gmail.com" class="contact-item"><div class="ci-icon"><i class="fa-solid fa-envelope"></i></div><div class="ci-text"><span>Email</span><strong>riamatilda99@gmail.com</strong></div></a>
+            <a href="https://www.instagram.com/matildasihite_?igsh=MWhnNHJqYmVrYml5aQ==" target="_blank" class="contact-item"><div class="ci-icon"><i class="fa-brands fa-instagram"></i></div><div class="ci-text"><span>Instagram</span><strong>matildasihite_</strong></div></a>
+            <a href="https://www.linkedin.com/in/ria-matilda-sihite/" target="_blank" class="contact-item"><div class="ci-icon"><i class="fa-brands fa-linkedin"></i></div><div class="ci-text"><span>LinkedIn</span><strong>Ria Matilda Sihite</strong></div></a>
+            <a href="https://github.com/erylMatilda-Eunwoo" target="_blank" class="contact-item"><div class="ci-icon"><i class="fa-brands fa-github"></i></div><div class="ci-text"><span>GitHub</span><strong>erylMatilda-Eunwoo</strong></div></a>
+          </div>
+        </div>
+        <div class="contact-right reveal-up" style="--d:.15s">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group"><label>Nama Lengkap</label><input type="text" id="nama" placeholder="Masukkan nama Anda" required></div>
+            <div class="form-group"><label>Alamat Email</label><input type="email" id="email" placeholder="usn@satyaterrabhinneka.ac.id" required></div>
+            <div class="form-group"><label>Pesan</label><textarea id="pesan" placeholder="Tulis pesan atau masukan Anda..." required></textarea></div>
+            <button type="submit" class="btn-send"><span>Kirim Pesan</span> <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
